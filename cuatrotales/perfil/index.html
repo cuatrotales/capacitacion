@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PERFIL</title>
+    <!-- css -->
+    <link rel="stylesheet" href="splash.css" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="splash">
+      <h1 class="fade-in">PERFIL</h1>
+    </div>
+    <section id="perfil" class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+            <!--left col-->
+            <div class="text-center">
+              <img
+                src="img/perfil.png"
+                alt="Perfil"
+                class="rounded mr-1 w-100"
+              />
+            </div>
+          </div>
+          <!--/col-3-->
+          <div class="col-sm-12 col-md-9">
+            <form>
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-group">
+                    <label class="text-primary">Nombres</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Nombres"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-group">
+                    <label class="text-primary">Apellidos</label>
+                    <input
+                      type="text"
+                      style="text-transform: capitalize"
+                      placeholder="Apellidos"
+                      class="form-control"
+                      require
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <label class="text-primary">Cargo</label>
+                    <select class="form-control" name="dependencia" require>
+                      <option selected>Seleccionar un cargo</option>
+                      <option value="Directiva">Directiva</option>
+                      <option value="Alumno">Alumno</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <label class="text-primary">Correo Electronico</label>
+                    <input
+                      type="email"
+                      name="email"
+                      style="text-transform: capitalize"
+                      placeholder="Correo electronico"
+                      class="form-control"
+                      require
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm12 col-md-6">
+                  <div class="form-group">
+                    <label class="text-primary">Telefono</label>
+                    <input
+                      type="text"
+                      name="telefono"
+                      style="text-transform: capitalize"
+                      placeholder="Telefono"
+                      class="form-control"
+                      require
+                    />
+                  </div>
+                </div>
+                <div class="col-sm12 col-md-6">
+                  <div class="form-group">
+                    <label class="text-primary">Dirección</label>
+                    <input
+                      type="text"
+                      name="direccion"
+                      style="text-transform: capitalize"
+                      placeholder="Direccion"
+                      class="form-control"
+                      require
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-group">
+                    <label class="text-primary">Sexo</label>
+                    <select
+                      name="nombre"
+                      style="text-transform: capitalize"
+                      class="form-control"
+                      require
+                    >
+                      <option selected>Seleccione su sexo</option>
+                      <option value="Hombre">Hombre</option>
+                      <option value="Mujer">Mujer</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-group">
+                    <label class="text-primary">Edad</label>
+                    <input
+                      type="number"
+                      name="edad"
+                      style="text-transform: capitalize"
+                      placeholder="Edad"
+                      class="form-control"
+                      require
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="text-primary">Seleccione su foto de perfil</label>
+                <input
+                  type="file"
+                  name="image"
+                  class="btn btn-transparent text-secondary shadow w-100"
+                />
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-group">
+                    <label class="text-primary">Contraseña</label>
+                    <input
+                      type="password"
+                      name="password"
+                      class="form-control"
+                      placeholder="Contraseña"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-group">
+                    <label class="text-primary">Confirmar Contraseña</label>
+                    <input
+                      type="password"
+                      name="confirm_password"
+                      class="form-control"
+                      placeholder="Repetir contraseña"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <input
+                      type="submit"
+                      class="btn btn-secondary mt-2"
+                      value="Guardar"
+                    />
+                    <input
+                      type="reset"
+                      class="btn btn-dark mt-2"
+                      value="Borrar"
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--/col-9-->
+        </div>
+        <!--/row-->
+      </div>
+    </section>
+    <!-- script -->
+    <script src="./splash.js"></script>
+  </body>
+</html>
